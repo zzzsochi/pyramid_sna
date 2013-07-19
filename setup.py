@@ -7,19 +7,19 @@ README = open(os.path.join(here, 'README.rst')).read()
 CHANGES = open(os.path.join(here, 'CHANGES.rst')).read()
 
 requires = [
-    'pyramid==1.4',
-    'pyramid_beaker==0.7',
-    'requests==1.2.0',
+    'pyramid<1.5',
+    'pyramid_beaker<0.8',
+    'requests<1.3',
 ]
 
 test_requires = [
-    'WebTest==1.4.3',
-    'mock==1.0.1',
+    'WebTest',
+    'mock',
 ]
 
 testing_extras = test_requires + [
-    'nose==1.2.1',
-    'coverage==3.6',
+    'nose',
+    'coverage',
 ]
 
 
@@ -34,11 +34,7 @@ setup(
         "License :: OSI Approved :: BSD License",
         "Operating System :: OS Independent",
         "Programming Language :: Python",
-        "Programming Language :: Python :: 2",
-        "Programming Language :: Python :: 2.6",
-        "Programming Language :: Python :: 2.7",
         "Programming Language :: Python :: 3",
-        "Programming Language :: Python :: 3.2",
         "Programming Language :: Python :: 3.3",
         "Programming Language :: Python :: Implementation :: CPython",
         "Topic :: Internet :: WWW/HTTP",
