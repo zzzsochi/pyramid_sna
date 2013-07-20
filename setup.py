@@ -7,9 +7,9 @@ README = open(os.path.join(here, 'README.rst')).read()
 CHANGES = open(os.path.join(here, 'CHANGES.rst')).read()
 
 requires = [
-    'pyramid<1.5',
-    'pyramid_beaker<0.8',
-    'requests<1.3',
+    'pyramid',
+    'pyramid_beaker',
+    'requests',
 ]
 
 test_requires = [
